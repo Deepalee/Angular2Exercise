@@ -1,0 +1,34 @@
+{
+    "products": [
+        {
+            "name": "iPhone 7",
+            "description": "Jet Black, 128 GB",
+            "price": "70000",
+            "brand": "Apple"
+        },
+        {
+            "name": "Moto M",
+            "description": "GOld, 32GB",
+            "price": "15999",
+            "brand": "Motorola"
+        },
+        {
+            "name": "Google Pixel",
+            "description": "Quite Black, 128 GB",
+            "price": "66000",
+            "brand": "Google"
+        },
+        {
+            "name": "Samsung Galaxy S7",
+            "description": "Gold Platinum, 32 GB",
+            "price": "43400",
+            "brand": "Samsung"
+        },
+        {
+            "name": "MI 5",
+            "description": "White, 32 GB",
+            "price": "43400",
+            "brand": "MI"
+        }
+    ]
+}

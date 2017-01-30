@@ -1,0 +1,29 @@
+<div class="container">
+  <h2>Product Details</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Sr. No.</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Brand</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products|slice:this.minRange:this.maxRange;let count = index">
+        <td>{{count+1}}</td>
+        <td>{{product.name|uppercase}}</td>
+        <td>{{product.description}}</td>
+        <td>{{product.price|currency}}</td>
+        <td>{{product.brand}}</td>
+        <td><button name="Edit" (click)="productDetails('Edit',this.product,this.product._id)">Edit</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div *ngIf="optselected=='Edit'">
+    <app-prodedit [componentname]="optselected"  [sname]="pname"  [sdescription]="pdescription" [sprice]="pprice" [sbrand]="pbrand"></app-prodedit>
+  </div>
+</div>

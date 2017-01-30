@@ -1,0 +1,63 @@
+<div class="container">
+  <div class="form-horizontal" role="form">
+    <h2>Add New Item</h2>
+    <table class="table">
+      <tr>
+        <td>
+          <div class="form-group">
+            <label>Name:</label>
+          </div>
+        </td>
+        <td>
+          <div class="form-group">
+            <input type="text" name="name" class="form-control" [(ngModel)]="products.name"/>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="form-group">
+            <label>Description:</label>
+          </div>
+        </td>
+        <td>
+          <div class="form-group">
+            <input type="text" name="desciption" class="form-control" alphabetsonly [(ngModel)]="products.description"/>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="form-group">
+            <label>Price:</label>
+          </div>
+        </td>
+        <td>
+          <div class="form-group">
+            <input type="text" name="price" numbersonly class="form-control" [(ngModel)]="products.price"/>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="form-group">
+            <label>Brand:</label>
+          </div>
+        </td>
+        <td>
+          <div class="form-group">
+            <input type="text" name="brand" class="form-control" [(ngModel)]="products.brand"/>
+          </div>
+        </td>
+        <tr>
+          <td colspan="2">
+            <div class="form-group">
+              <button name="Save" (click)="addProduct(this.products)" class="btn btn-primary btn-block">Save</button>
+            </div>
+          </td>
+        </tr>
+    </table>
+  </div>
+</div>
+
+

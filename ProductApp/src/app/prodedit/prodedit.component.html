@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="form-horizontal" role="form">
+    <table class="table">
+      <tr>
+        <td>
+          <div class="form-group">
+            <label>Name:</label>
+          </div>
+        </td>
+        <td>
+          <div class="form-group">
+            <input type="text" name="name" value="{{this.sname}}" class="form-control"  [(ngModel)]="product.name" />  {{sname}} 
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="form-group">
+            <label>Description:</label>
+          </div>
+        </td>
+        <td>
+          <div class="form-group">
+            <input type="text" name="description" value="{{sdescription}}" class="form-control" alphabetsonly [(ngModel)]="product.description" /> {{sdescription}} 
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="form-group">
+            <label>Price:</label>
+          </div>
+        </td>
+        <td>
+          <div class="form-group">
+            <input type="text" name="price" value="{{sprice}}" numbersonly class="form-control" [(ngModel)]="product.price" /> {{sprice}}
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="form-group">
+            <label>Brand:</label>
+          </div>
+        </td>
+        <td>
+          <div class="form-group">
+            <input type="text" name="brand" value="{{sbrand}}" class="form-control" [(ngModel)]="product.brand" /> {{sbrand}}
+          </div>
+        </td>
+        <tr>
+          <td colspan="2">
+            <div class="form-group">
+              <button  name="Save" (click)="updateProduct(this.product)" class="btn btn-primary btn-block">Save</button>
+            </div>
+          </td>
+        </tr>
+    </table>
+  </div>
+</div>
